@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--navbar markup-->
+    <nav class="navbar navbar-inverse simbioNavbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand" href="#">
+                    <img alt="Instructor Portal Tag" src="images/img_InstPortTag.svg" width="200px">
+                </span>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img alt="Instructor Icon" src="images/iconInstruct_light.svg" width="13px" /> Chucky
+                        Cheeze <i class="fas fa-chevron-down text-right"></i></a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Login <i class="fas fa-chevron-down text-right"></i></a></li>
+                <li><a class="fas fa-expand-arrows-alt"></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--side nav markup-->
+    <h1 class="firstH1">Sidebar Menu</h1>
+    <ul class="sideMenu">
+        <li> <a href="#" class=""><img alt="Home Icon " src="images/iconHome_default.svg" width="17px" /> Home</a></li>
+        <li> <a href="#" class=""><img alt="Setup Icon " src="images/iconSetup_default.svg" width="15px"/> Setup
+                Checklist</a></li>
+        <li> <a href="#" class=""><img alt="Course Icon " src="images/iconCourseSect_default.svg" width="15px" />
+                Course Sections</a></li>
+        <li> <a href="#" class=""><img alt="Instructors Icon " src="images/iconInstruct_default.svg" width="15px" />
+                Instructors</a></li>
+        <li> <a href="#" class=""><img alt="AssignmentsIcon " src="images/iconAssign_default.svg" width="15px" />
+                Assignments</a></li>
+        <li> <a href="#" class=""><img alt="Student Icon " src="images/iconStudent_default.svg" width="15px" /> Student
+                Registration</a></li>
+        <li> <a href="#" class=""><img alt="Performance Icon " src="images/iconPerform_default.svg" width="15px" />
+                Performance</a></li>
+        <li> <a href="#" class=""><img alt="Gradebook Icon " src="images/iconGradebook_default.svg" width="17px" />
+                Gradebook</a></li>
+        <li> <a href="#" class=""><img alt="Supplementary Icon " src="images/iconSupp_default.svg" width="17px" />
+                Supplementary Materials</a></li>
+    </ul>
+
+    <!--panel markup-->
+    <h1>Panels</h1>
+    <div class="col-md-12">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="col-md-12 dark-banner">
+                <h2>
+                    SimUText Setup Checklist</h2>
+                <div class="form-check dontShow-right">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Show setup reminder on Home page</label>
+                </div>
+            </div>
+            <div class="panelContainer">
+                <div class="panel">
+                    <div class="panel-heading panel-setupCheck" role="tab" id="headingOne">
+                        <input type="checkbox" class="setUpCheck" aria-label="Checkbox for following text input"> <img
+                            class="setupIcon" alt="Course Section Tag" src="images/iconCourseSect_light.svg" width="18px" />
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">Create Course
+                                Sections - do this first!
+                            </a> </h3>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body panelBody-Bkg1"> Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life
+                            accusamus terry
+                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading panel-setupCheck" role="tab" id="headingTwo">
+                        <input type="checkbox" class="setUpCheck" aria-label="Checkbox for following text input"><img
+                            class="setupIcon" alt="Course Section Tag" src="images/iconAddInsructor_light.svg" width="14px" />
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                Add Co-Instructors and Teaching Assistants </a> </h3>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body panelBody-Bkg1"> Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life
+                            accusamus terry
+                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-heading panel-setupCheck" role="tab" id="headingThree">
+                        <input type="checkbox" class="setUpCheck" aria-label="Checkbox for following text input"> <img
+                            class="setupIcon" alt="Course Section Tag" src="images/iconAssign_light.svg" width="14px" />
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+
+                                Create Assignments, Scoring, and Due Dates</a> </h3>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body panelBody-Bkg1"> Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life
+                            accusamus terry
+                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-heading panel-setupCheck" role="tab" id="headingFour" style="opacity:.7;">
+                        <input type="checkbox" checked class="setUpCheck" aria-label="Checkbox for following text input">
+                        <img class="setupIcon" alt="Course Section Tag" src="images/iconStudent_light.svg" width="14px" />
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+                                Distribute Student Registration Information</a> </h3>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body panelBody-Bkg1"> Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life
+                            accusamus terry
+                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
+                    </div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-heading panel-setupCheck" role="tab" id="headingFour">
+                        <input type="checkbox" class="setUpCheck" aria-label="Checkbox for following text input">
+                        <h3 class="panel-title">
+                            Next Steps </h3>
+                    </div>
+                    <div id="" class="panel" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body panelBody-Bkg1">
+                            <h3 class="panel-title nextStepTitle">
+                                <img class="setupIcon" alt="Gradebook Tag" src="images/iconGradebook_blue.svg" width="16px" />
+                                View Student Gradebook</h3>
+                            <p>The Gradebook page contains the full student roster as well as a table of all published
+                                student
+                                scores. Students can be dropped from this SimUText here.</p>
+                            <p>[Link to zendesk article]</p>
+
+                            <h3 class="panel-title nextStepTitle">
+                                <img class="setupIcon" alt="Gradebook Tag" src="images/iconPerform_blue.svg" width="16px" />
+                                Analyze Student Performance</h3>
+                            <p>The Performance page can be used to view and track student work. This provides quick
+                                access to
+                                confirm when students submit answers, or track which concepts are difficult or
+                                confusing.
+
+                                <p>The Publish Scores option allows students to see their score for assignments as well
+                                    as
+                                    answers to their graded questions.Grades can be moved into a Learning Management
+                                    System or
+                                    separate gradebook by downloading a spreadsheet of student scores.</p>
+
+                                <p>[Link to zendesk article]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>What's New</h1>
+    <!-- <div class="col-md-6 updateNew">
+            <h3>Announcements</h3>
+<div class="container-fluid"></div>
+                    </div>
+                    <div class="col-md-6 setUp-simuBox">
+                            <h3>Set Up Your Simutext</h3>
+
+                <div class="container-fluid"></div>
+                <p>The Publish Scores option allows students to see their score for assignments as well as
+                        answers to their graded questions.Grades can be moved into a Learning Management System or
+                        separate gradebook by downloading a spreadsheet of student scores.</p>
+                                    </div> -->
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-heading panel-setupCheck setUp-simuBox" role="tab" id="">
+                <i class="fas fa-bullhorn beforeText-Icon"></i>
+                <h3 class="panel-title"> Announcements</h3>
+            </div>
+
+            <div class="panel-body panelBody-Bkg2"> Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry
+                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-heading panel-setupCheck setUp-simuBox" role="tab" id="">
+                <i class="fas fa-tools beforeText-Icon"></i>
+                <h3 class="panel-title">Setup Your Simutext </h3>
+                <div class="form-check dontShow-right">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Don't show this again</label>
+                </div>
+            </div>
+
+            <div class="panel-body panelBody-Bkg2 panelBody-Bkg2"> Anim pariatur cliche reprehenderit, enim eiusmod
+                high life
+                accusamus terry
+                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. <button  style="margin-top:10px;"  class="btn btn-default center-block blueButton"
+                    type="submit">Setup Now</button></div>
+
+        </div>
+    </div>
+    <h1>Course Sections</h1>
+
+    <div class="col-md-12 ">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel courseSectionContainer">
+                <div class="panel-heading panel-setupCheck courseSectionHeading" role="tab" id="headingFive">
+                    <img class="setupIcon" alt="Course Section Tag" src="images/iconCourseSect_light.svg" width="18px" />
+                    <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive"> Course Sections
+                        </a> </h3>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                    <div class="panel-body panelBody-Bkg3"> <button class="btn btn-md btn-default blueButton"
+                        type="submit"><i class="fas fa-plus"></i> Add Course Section</button> </div>
+                    <div class="panel-body panelBody-Bkg3"> <p class="col-md-8 ">Wednesday Lab Section <i class="fas fa-edit"></i>
+                    <p class="col-md-2 ">Students: 6 </p>
+                    <button class="btn btn-default blueButton marginUp"
+                        type="submit"><i class="fas fa-plus"></i> View and Edit</button>
+                    </div>
+                    <div class="panel-body panelBody-Bkg3"> <h3 class=" panel-title nextStepTitle">Instructors</h3> </div>
+                    <div class="panel-body panelBody-Bkg1">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
