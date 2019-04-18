@@ -262,3 +262,34 @@ i.beforeText-Icon {
         padding:5px 0 0 0;
     }
   }
+
+  ol.assignInstruxList {
+  padding:0;
+  margin:10px 0 10px -10px;
+  }
+  .assignInstruxList li {
+    float: left;
+    margin: 0 15px 12px 10px;
+  }
+
+  ol.assignInstruxList {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+ol.assignInstruxList li {
+  counter-increment: my-awesome-counter;
+}
+ol.assignInstruxList li::before {
+  content: counter(my-awesome-counter) " ";
+  text-align:center;
+  border:solid 2px#97ba04;
+  padding:3px 3px 3px 7px;
+  margin-right:3px;
+  border-radius:50%;
+  font-weight: bold;
+}
+
+.bubbleContainer {
+    background:yellow;
+    height:100%;
+}
